@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Path \"c:\\\\Users\\\\User\\\\Documents\\\\workspace\\\\machinshin\\\\machinshin.github.io\" -Force)",
+      "Bash(Select-Object Name, PSIsContainer)",
+      "PowerShell(head -50)",
+      "WebFetch(domain:www.linkedin.com)",
+      "WebFetch(*)",
+      "WebFetch(domain:*)",
+      "Bash(mkdir \"C:\\\\Users\\\\User\\\\data\")",
+      "WebFetch(domain:www.census.gov)",
+      "WebSearch",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:www2.census.gov)",
+      "WebFetch(domain:download.geonames.org)"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\User"
+    ]
+  }
+}

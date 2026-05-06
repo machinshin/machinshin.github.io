@@ -1,77 +1,647 @@
 <!doctype html>
-<html>
-  <head>
-    <title>Vat Raghavan - Experienced Engineering Leader</title>
-    <script src="https://kit.fontawesome.com/ac97ad52b5.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
-    <!-- favicon-generator.org -->
-    <link rel="apple-touch-icon" sizes="57x57"   href="/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60"   href="/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72"   href="/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76"   href="/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vat Raghavan — Engineering Team Lead</title>
+  <script src="https://kit.fontawesome.com/ac97ad52b5.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="57x57"   href="/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60"   href="/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72"   href="/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76"   href="/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32"   href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96"   href="/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16"   href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 
-    <style type="text/css">
+  <style>
+    :root {
+      --teal:        #2a9d8f;
+      --teal-dark:   #1f7a6d;
+      --teal-light:  rgba(42,157,143,0.12);
+      --navy:        #1a2332;
+      --navy-light:  #243347;
+      --text:        #2c3e50;
+      --text-light:  #6c7a89;
+      --bg:          #ffffff;
+      --bg-alt:      #f7f9fc;
+      --border:      #e4e9ef;
+    }
 
-      @font-face {
-        font-family: Open Sans;
-        font-weight: normal
-        font-style: normal;
-      }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+    }
 
-      @font-face {
-        font-family: Open Sans;
-        font-weight: 300;
-      }
+    /* ── NAV ── */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: var(--navy);
+      height: 3.5rem;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 2rem;
+    }
+    .nav-brand { color: #fff; font-weight: 700; font-size: 1rem; text-decoration: none; }
+    .nav-links { display: flex; gap: 1.8rem; list-style: none; }
+    .nav-links a {
+      color: rgba(255,255,255,0.75); text-decoration: none;
+      font-size: 0.85rem; font-weight: 600; letter-spacing: 0.03em;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--teal); }
 
-      @font-face {
-        font-weight: 500;
-        font-family: Open Sans;
-      }
+    /* ── SHARED ── */
+    .section { padding: 5rem 2rem; }
+    .section--alt { background: var(--bg-alt); }
+    .container { max-width: 960px; margin: 0 auto; }
+    .section-heading {
+      font-size: 1.75rem; font-weight: 700; color: var(--navy);
+      margin-bottom: 0.25rem;
+    }
+    .section-heading::after {
+      content: '';
+      display: block;
+      width: 2.5rem; height: 3px;
+      background: var(--teal);
+      margin-top: 0.4rem; margin-bottom: 1.75rem;
+    }
 
-      html { border: 0; margin: 0; padding: 0; }
-      body { border: 0; margin: 0; padding: 2em; font-family: Open Sans; font-weight: 300; }
-      div  { line-height: 135%; font-size: 300%; }
+    /* ── HERO ── */
+    #hero {
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+      padding: 5rem 2rem 4.5rem;
+    }
+    .hero-inner {
+      max-width: 960px; margin: 0 auto;
+      display: flex; align-items: center; gap: 3rem;
+    }
+    .hero-photo {
+      width: 170px; height: 170px;
+      border-radius: 50%; object-fit: cover;
+      border: 4px solid var(--teal); flex-shrink: 0;
+    }
+    .hero-text h1 { font-size: 2.4rem; font-weight: 700; color: #fff; line-height: 1.2; }
+    .hero-text h2 { font-size: 1.15rem; font-weight: 400; color: var(--teal); margin: 0.4rem 0 1rem; }
+    .hero-text p  {
+      font-size: 0.97rem; font-weight: 300;
+      color: rgba(255,255,255,0.82);
+      max-width: 520px; line-height: 1.75; margin-bottom: 1.6rem;
+    }
+    .hero-ctas { display: flex; gap: 0.8rem; flex-wrap: wrap; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 0.45rem;
+      padding: 0.6rem 1.3rem; border-radius: 4px;
+      font-family: inherit; font-size: 0.88rem; font-weight: 600;
+      text-decoration: none; transition: all 0.2s;
+    }
+    .btn-primary { background: var(--teal); color: #fff; }
+    .btn-primary:hover { background: var(--teal-dark); }
+    .btn-outline { border: 2px solid rgba(255,255,255,0.45); color: #fff; }
+    .btn-outline:hover { border-color: #fff; }
 
-      .selfie { height: 12.15em; float: left; margin-right: 2.7em; }
+    /* ── ABOUT ── */
+    .about-text { font-size: 1rem; line-height: 1.85; max-width: 760px; }
+    .about-text p + p { margin-top: 1rem; }
 
-      .myName b   { font-weight: 500; }
-      .splitAbove { margin-top: 1.35em; }
+    /* ── SKILLS ── */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.2rem;
+    }
+    .skill-card {
+      background: #fff; border: 1px solid var(--border);
+      border-radius: 8px; padding: 1.4rem 1.5rem;
+    }
+    .skill-card h3 {
+      font-size: 0.8rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.07em;
+      color: var(--teal); margin-bottom: 0.85rem;
+      display: flex; align-items: center; gap: 0.5rem;
+    }
+    .tags { display: flex; flex-wrap: wrap; gap: 0.45rem; }
+    .tag {
+      background: var(--bg-alt); border: 1px solid var(--border);
+      border-radius: 3px; padding: 0.22rem 0.55rem;
+      font-size: 0.8rem; color: var(--text);
+    }
 
-      a       { color: black; text-decoration: none; border-bottom: }
-      a:hover { color: blue; }
+    /* ── ACHIEVEMENTS ── */
+    #achievements { background: var(--navy); }
+    #achievements .section-heading { color: #fff; }
+    .achievements-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.2rem;
+    }
+    .achievement-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.09);
+      border-top: 3px solid var(--teal);
+      border-radius: 8px; padding: 1.4rem 1.5rem;
+    }
+    .achievement-card .num   { font-size: 2rem; font-weight: 700; color: var(--teal); line-height: 1; }
+    .achievement-card .label { font-size: 0.88rem; color: rgba(255,255,255,0.72); margin-top: 0.4rem; line-height: 1.45; }
 
-      i { vertical-align: text-top; display: inline-block;
-        width: 2em; text-align: center; }
+    /* ── EXPERIENCE ── */
+    .timeline { padding-left: 1.8rem; border-left: 2px solid var(--border); }
+    .tl-item  { position: relative; margin-bottom: 2.8rem; }
+    .tl-item::before {
+      content: '';
+      position: absolute; left: -2.25rem; top: 0.45rem;
+      width: 10px; height: 10px; border-radius: 50%;
+      background: var(--teal);
+      box-shadow: 0 0 0 3px #fff, 0 0 0 5px var(--teal);
+    }
+    .tl-header {
+      display: flex; justify-content: space-between;
+      align-items: baseline; flex-wrap: wrap; gap: 0.2rem;
+    }
+    .tl-title   { font-size: 1.02rem; font-weight: 700; color: var(--navy); }
+    .tl-date    { font-size: 0.82rem; color: var(--text-light); font-weight: 600; white-space: nowrap; }
+    .tl-company { font-size: 0.92rem; font-weight: 600; color: var(--teal); margin: 0.15rem 0 0.25rem; }
+    .tl-desc    { font-size: 0.85rem; color: var(--text-light); font-style: italic; margin-bottom: 0.55rem; }
+    .tl-bullets { list-style: none; }
+    .tl-bullets li {
+      font-size: 0.9rem; color: var(--text);
+      padding: 0.18rem 0 0.18rem 1.1rem; position: relative;
+    }
+    .tl-bullets li::before { content: '▸'; position: absolute; left: 0; color: var(--teal); }
+    .tl-stack  { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.7rem; }
+    .stack-tag {
+      font-size: 0.73rem; font-weight: 600;
+      background: var(--teal-light);
+      color: var(--teal-dark);
+      border: 1px solid rgba(42,157,143,0.25);
+      border-radius: 3px; padding: 0.18rem 0.5rem;
+    }
+    .former-box {
+      margin-top: 2.5rem; padding: 1.4rem 1.6rem;
+      background: var(--bg-alt); border: 1px solid var(--border); border-radius: 8px;
+    }
+    .former-box h3 {
+      font-size: 0.77rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.08em;
+      color: var(--text-light); margin-bottom: 0.75rem;
+    }
+    .former-list { display: flex; flex-wrap: wrap; gap: 0.4rem 2rem; list-style: none; }
+    .former-list li { font-size: 0.9rem; color: var(--text); }
+    .former-list li span { color: var(--text-light); font-size: 0.85rem; margin-left: 0.3rem; }
 
-    </style>
-  </head>
-  <body>
-    <img class="selfie" src="vat.purple-shirt.jpeg"/>
-    <div class="myName"><b>Vat Raghavan</b></div>
-    <div><a target="_blank" href="vat.raghavan.resume.pdf"><i class="far fa-file-pdf"></i>Experienced Engineering Leader</a></div>
-    <div><a target="_blank" href="https://en.wikipedia.org/wiki/Berkeley%2C_California"><i class="fas fa-globe"></i>Berkeley, CA</a></div>
-    <div class="splitAbove"><a target="_blank" href="https://github.com/machinshin/"><i class="fab fa-github"></i>Github</a></div>
-    <div><a target="_blank" href="https://www.facebook.com/srivatsan.raghavan.90"><i class="fab fa-facebook-square"></i>Facebook</a></div>
-    <!-- <div><a target="_blank" href=""><i class="icon-twitter"></i>Twitter</a></div> -->
-    <!-- <div><a target="_blank" href=""><i class="icon-megaphone"></i>Blog</a></div> -->
-    <div><a target="_blank" href="https://www.linkedin.com/in/vatraghavan/"><i class="fab fa-linkedin-in"></i>LinkedIn</a></div>
-    <!--<div><a target="_blank" href=""><i class="icon-stackoverflow"></i>StackOverflow</a></div> -->
-    <div class="splitAbove"><a target="_blank" href="tel:+19175150564"><i class="fas fa-mobile"></i>(917) 515-0564 - text preferred</a></div>
-    <div><a target="_blank" href="mailto:vat.raghavan@gmail.com"><i class="fas fa-envelope-open-text"></i>vat.raghavan@gmail.com</a></div>
-  </body>
+    /* ── INDUSTRIES ── */
+    .industry-list { display: flex; flex-wrap: wrap; gap: 0.85rem; }
+    .ind-badge {
+      display: flex; align-items: center; gap: 0.55rem;
+      background: #fff; border: 1px solid var(--border);
+      border-radius: 6px; padding: 0.65rem 1.1rem;
+      font-size: 0.88rem; font-weight: 600; color: var(--navy);
+    }
+    .ind-badge i { color: var(--teal); font-size: 1em; width: 1.2em; text-align: center; }
+
+    /* ── RECOMMENDATIONS ── */
+    .rec-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.4rem;
+    }
+    .rec-card {
+      background: #fff; border: 1px solid var(--border);
+      border-radius: 8px; padding: 2rem 1.8rem 1.5rem; position: relative;
+    }
+    .rec-card::before {
+      content: '\201C';
+      position: absolute; top: 0.6rem; left: 1rem;
+      font-size: 3.5rem; color: var(--teal); opacity: 0.18;
+      font-family: Georgia, serif; line-height: 1;
+    }
+    .rec-quote { font-size: 0.9rem; line-height: 1.75; color: var(--text); font-style: italic; margin-bottom: 1.1rem; }
+    .rec-name  { font-weight: 700; font-size: 0.9rem; color: var(--navy); }
+    .rec-role  { font-size: 0.82rem; color: var(--text-light); margin-top: 0.1rem; }
+    .rec-placeholder .rec-quote { color: var(--text-light); }
+
+    /* ── CONTACT ── */
+    .contact-links { display: flex; flex-wrap: wrap; gap: 0.85rem; margin-top: 0.5rem; }
+    .contact-link {
+      display: flex; align-items: center; gap: 0.6rem;
+      text-decoration: none; color: var(--text);
+      background: #fff; border: 1px solid var(--border);
+      border-radius: 6px; padding: 0.65rem 1.1rem;
+      font-size: 0.9rem; transition: all 0.2s;
+    }
+    .contact-link:hover { border-color: var(--teal); color: var(--teal); }
+    .contact-link i { color: var(--teal); width: 1.1em; text-align: center; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--navy); color: rgba(255,255,255,0.4);
+      text-align: center; padding: 1.4rem; font-size: 0.82rem;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 660px) {
+      .hero-inner { flex-direction: column; text-align: center; gap: 1.5rem; }
+      .hero-ctas  { justify-content: center; }
+      .nav-links  { display: none; }
+      .tl-header  { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a class="nav-brand" href="#hero">Vat Raghavan</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#recommendations">Recommendations</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-inner">
+      <img class="hero-photo" src="vat.purple-shirt.jpeg" alt="Vat Raghavan"/>
+      <div class="hero-text">
+        <h1>Vat Raghavan</h1>
+        <h2>Engineering Team Lead &amp; Backend Systems Expert</h2>
+        <p>20+ years building and leading backend systems across fintech, AI &amp; media, healthcare IoT, energy, defense, and gaming. Former CTO. Polyglot engineer fluent in 8+ languages who picks up new stacks fast when it counts.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="vat.raghavan.resume.pdf" target="_blank">
+            <i class="far fa-file-pdf"></i> Download Resume
+          </a>
+          <a class="btn btn-outline" href="#contact">
+            <i class="fas fa-envelope"></i> Get in Touch
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-heading">About</h2>
+      <div class="about-text">
+        <p>I'm an engineering leader with over two decades of experience spanning the full stack — with my deepest roots in backend architecture, REST API design, database performance, and DevOps infrastructure. I've worked at every scale: as an individual contributor building systems from scratch, as a team lead managing eight engineers across timezones, and as a CTO taking a product from zero to production.</p>
+        <p>My career spans an unusually wide range of industries — fintech at Bloomberg and E*Trade, social payments at Tilt (5M+ users), healthcare IoT at NimaSensor, AI &amp; media automation at UpResTech, energy sector voice platforms, defense simulation, and gaming. That breadth means I adapt quickly: I've consistently been handed new domains and new stacks and delivered.</p>
+        <p>I'm a polyglot engineer. I've shipped production code in TypeScript, Python, Go, Perl, Java, C/C++, and Erlang. When a role needs me to pick up a new language or framework fast, that's not a risk — it's something I've done repeatedly throughout my career and genuinely enjoy.</p>
+        <p>I lead by staying close to the work. I do architecture and code reviews, mentor engineers, collaborate with stakeholders to scope and estimate, and I still write code. The best engineering leaders stay technical — I believe that and try to live it.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section section--alt">
+    <div class="container">
+      <h2 class="section-heading">Technical Skills</h2>
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <h3><i class="fas fa-server"></i> Backend &amp; API</h3>
+          <div class="tags">
+            <span class="tag">Node.js</span>
+            <span class="tag">REST API Design</span>
+            <span class="tag">Express</span>
+            <span class="tag">JSON Schema</span>
+            <span class="tag">Swagger / OpenAPI</span>
+            <span class="tag">Microservices</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h3><i class="fas fa-database"></i> Databases &amp; Data</h3>
+          <div class="tags">
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">Kafka</span>
+            <span class="tag">Query Optimization</span>
+            <span class="tag">Schema Design</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h3><i class="fas fa-cloud"></i> DevOps &amp; Infrastructure</h3>
+          <div class="tags">
+            <span class="tag">AWS</span>
+            <span class="tag">GCP</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Kubernetes</span>
+            <span class="tag">CI/CD</span>
+            <span class="tag">GitHub Actions</span>
+            <span class="tag">Jenkins</span>
+            <span class="tag">Travis CI</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h3><i class="fas fa-code"></i> Languages</h3>
+          <div class="tags">
+            <span class="tag">TypeScript</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Python</span>
+            <span class="tag">Golang</span>
+            <span class="tag">C / C++</span>
+            <span class="tag">Erlang</span>
+            <span class="tag">Perl</span>
+            <span class="tag">Java</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h3><i class="fas fa-users"></i> Leadership &amp; Process</h3>
+          <div class="tags">
+            <span class="tag">Team Lead (8 engineers)</span>
+            <span class="tag">Remote Team Management</span>
+            <span class="tag">Architecture &amp; Design</span>
+            <span class="tag">Code Review</span>
+            <span class="tag">Agile / Kanban / Scrum</span>
+            <span class="tag">Stakeholder Management</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h3><i class="fas fa-robot"></i> AI &amp; Automation</h3>
+          <div class="tags">
+            <span class="tag">ElevenLabs</span>
+            <span class="tag">D-ID</span>
+            <span class="tag">Midjourney</span>
+            <span class="tag">YouTube Data API</span>
+            <span class="tag">After Effects Scripting</span>
+            <span class="tag">Video Upscaling Pipelines</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section id="achievements" class="section">
+    <div class="container">
+      <h2 class="section-heading">Career Highlights</h2>
+      <div class="achievements-grid">
+
+        <div class="achievement-card">
+          <div class="num">20+</div>
+          <div class="label">Years of professional software engineering</div>
+        </div>
+
+        <div class="achievement-card">
+          <div class="num">5M+</div>
+          <div class="label">User accounts migrated with zero downtime at Tilt</div>
+        </div>
+
+        <div class="achievement-card">
+          <div class="num">1000%+</div>
+          <div class="label">Throughput improvement on Tilt's notifications layer</div>
+        </div>
+
+        <div class="achievement-card">
+          <div class="num">8</div>
+          <div class="label">Engineers led as Technical Team Lead at Tilt</div>
+        </div>
+
+        <div class="achievement-card">
+          <div class="num">8+</div>
+          <div class="label">Production programming languages shipped</div>
+        </div>
+
+        <div class="achievement-card">
+          <div class="num">CTO</div>
+          <div class="label">Built izi.ai SaaS from zero to production as co-founder</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section section--alt">
+    <div class="container">
+      <h2 class="section-heading">Work Experience</h2>
+      <div class="timeline">
+
+        <div class="tl-item">
+          <div class="tl-header">
+            <span class="tl-title">Founding Engineer</span>
+            <span class="tl-date">Oct 2022 – Aug 2024</span>
+          </div>
+          <div class="tl-company">UpResTech &nbsp;&middot;&nbsp; Remote</div>
+          <div class="tl-desc">AI-driven media automation and content production tooling.</div>
+          <ul class="tl-bullets">
+            <li>Built automated YouTube video upload and claims management tools via YouTube Data API.</li>
+            <li>Designed and implemented an AI-based video upscaling toolchain end-to-end.</li>
+            <li>Owned DevOps, growth engineering, and infrastructure tasks across the stack.</li>
+            <li>Trained staff on tooling and internal systems.</li>
+          </ul>
+          <div class="tl-stack">
+            <span class="stack-tag">TypeScript</span>
+            <span class="stack-tag">Node.js</span>
+            <span class="stack-tag">Python</span>
+            <span class="stack-tag">YouTube Data API</span>
+            <span class="stack-tag">ElevenLabs</span>
+            <span class="stack-tag">D-ID</span>
+            <span class="stack-tag">Midjourney</span>
+            <span class="stack-tag">After Effects Scripting</span>
+            <span class="stack-tag">Adobe Premiere</span>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-header">
+            <span class="tl-title">Independent Consulting</span>
+            <span class="tl-date">2020 – 2022</span>
+          </div>
+          <div class="tl-company">Various Clients &nbsp;&middot;&nbsp; Remote</div>
+          <ul class="tl-bullets">
+            <li>Delivered backend engineering and systems consulting for clients across sectors.</li>
+            <li>Designed and built an IVR platform for the energy sector integrating Twilio Studio, Autopilot, Salesforce, Stripe, and MySQL with real-time CI/CD via GitHub Actions.</li>
+          </ul>
+          <div class="tl-stack">
+            <span class="stack-tag">Node.js</span>
+            <span class="stack-tag">Twilio</span>
+            <span class="stack-tag">SendGrid</span>
+            <span class="stack-tag">Salesforce</span>
+            <span class="stack-tag">MySQL</span>
+            <span class="stack-tag">GitHub Actions</span>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-header">
+            <span class="tl-title">CTO &amp; Co-Founder</span>
+            <span class="tl-date">2016 – 2018</span>
+          </div>
+          <div class="tl-company">izi.ai &nbsp;&middot;&nbsp; San Mateo, CA</div>
+          <div class="tl-desc">AI-based virtual assistant for team conference call collaboration and sharing.</div>
+          <ul class="tl-bullets">
+            <li>Architected and built the full SaaS product from scratch; deployed to dozens of beta customers on AWS.</li>
+            <li>Led and managed international consultant teams (India, Romania) on backend features and React frontend.</li>
+            <li>Integrated Slack, Asana, Trello, JIRA, and Stripe into a proprietary REST API.</li>
+          </ul>
+          <div class="tl-stack">
+            <span class="stack-tag">Node.js</span>
+            <span class="stack-tag">Express</span>
+            <span class="stack-tag">PostgreSQL</span>
+            <span class="stack-tag">AWS</span>
+            <span class="stack-tag">JSON Schema</span>
+            <span class="stack-tag">React</span>
+            <span class="stack-tag">Agile / Kanban</span>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-header">
+            <span class="tl-title">Lead Backend Engineer</span>
+            <span class="tl-date">2015 – 2016</span>
+          </div>
+          <div class="tl-company">NimaSensor (formerly 6SensorLabs) &nbsp;&middot;&nbsp; San Francisco, CA</div>
+          <div class="tl-desc">iOS-first SaaS platform for a proprietary hardware gluten &amp; peanut allergy sensor device.</div>
+          <ul class="tl-bullets">
+            <li>Owned the full backend: database schema design, API contract definition, and Node.js implementation.</li>
+            <li>Collaborated directly with CEO, PM, Designer, and Mobile Engineer to iterate on product features.</li>
+            <li>Built features enabling customers to share and search sensor test results from restaurants nationwide.</li>
+          </ul>
+          <div class="tl-stack">
+            <span class="stack-tag">Node.js</span>
+            <span class="stack-tag">Express</span>
+            <span class="stack-tag">PostgreSQL</span>
+            <span class="stack-tag">AWS</span>
+            <span class="stack-tag">Swagger</span>
+            <span class="stack-tag">Travis CI</span>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-header">
+            <span class="tl-title">Technical Team Lead — API</span>
+            <span class="tl-date">2013 – 2015</span>
+          </div>
+          <div class="tl-company">Tilt.com &nbsp;&middot;&nbsp; San Francisco, CA</div>
+          <div class="tl-desc">Social payments platform allowing users to pool funds collaboratively.</div>
+          <ul class="tl-bullets">
+            <li>Led and managed a team of eight remote engineers delivering API features consistently ahead of schedule.</li>
+            <li>Spearheaded full rewrite of the payments layer, seamlessly migrating 5M+ user accounts from Balanced Payments to Stripe Marketplaces with zero downtime.</li>
+            <li>Championed a performance rewrite of the notifications layer, achieving over 1000% throughput improvement.</li>
+            <li>Oversaw all API architecture, design, and code reviews across the team.</li>
+          </ul>
+          <div class="tl-stack">
+            <span class="stack-tag">Perl / Dancer</span>
+            <span class="stack-tag">PostgreSQL</span>
+            <span class="stack-tag">AWS</span>
+            <span class="stack-tag">Jenkins</span>
+            <span class="stack-tag">JIRA</span>
+            <span class="stack-tag">Agile / Kanban</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="former-box">
+        <h3>Earlier Career</h3>
+        <ul class="former-list">
+          <li>E*Trade Financial <span>2012 – 2014</span></li>
+          <li>Bloomberg L.P. <span>2008 – 2011</span></li>
+          <li>Meggitt Training Systems <span>2007 – 2008</span></li>
+          <li>Scientific Games <span>2004 – 2007</span></li>
+          <li>CNM Networks <span>2003 – 2005</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- INDUSTRIES -->
+  <section id="industries" class="section">
+    <div class="container">
+      <h2 class="section-heading">Industry Experience</h2>
+      <div class="industry-list">
+        <div class="ind-badge"><i class="fas fa-chart-line"></i> Financial Technology</div>
+        <div class="ind-badge"><i class="fas fa-film"></i> AI &amp; Media Automation</div>
+        <div class="ind-badge"><i class="fas fa-heartbeat"></i> Healthcare &amp; IoT</div>
+        <div class="ind-badge"><i class="fas fa-bolt"></i> Energy Sector</div>
+        <div class="ind-badge"><i class="fas fa-shield-alt"></i> Defense &amp; Simulation</div>
+        <div class="ind-badge"><i class="fas fa-gamepad"></i> Gaming</div>
+        <div class="ind-badge"><i class="fas fa-network-wired"></i> Telecommunications</div>
+        <div class="ind-badge"><i class="fas fa-hand-holding-usd"></i> Social Payments</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECOMMENDATIONS -->
+  <section id="recommendations" class="section section--alt">
+    <div class="container">
+      <h2 class="section-heading">Recommendations</h2>
+      <div class="rec-grid">
+
+        <div class="rec-card rec-placeholder">
+          <p class="rec-quote">[ Paste recommendation text from LinkedIn ]</p>
+          <div class="rec-name">Recommender Name</div>
+          <div class="rec-role">Title, Company</div>
+        </div>
+
+        <div class="rec-card rec-placeholder">
+          <p class="rec-quote">[ Paste recommendation text from LinkedIn ]</p>
+          <div class="rec-name">Recommender Name</div>
+          <div class="rec-role">Title, Company</div>
+        </div>
+
+        <div class="rec-card rec-placeholder">
+          <p class="rec-quote">[ Paste recommendation text from LinkedIn ]</p>
+          <div class="rec-name">Recommender Name</div>
+          <div class="rec-role">Title, Company</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-heading">Get in Touch</h2>
+      <div class="contact-links">
+        <a class="contact-link" href="mailto:vat.raghavan@gmail.com">
+          <i class="fas fa-envelope"></i> vat.raghavan@gmail.com
+        </a>
+        <a class="contact-link" href="tel:+19175150564">
+          <i class="fas fa-mobile-alt"></i> (917) 515-0564 &nbsp;&middot;&nbsp; text preferred
+        </a>
+        <a class="contact-link" href="https://www.linkedin.com/in/vat-raghavan/" target="_blank">
+          <i class="fab fa-linkedin-in"></i> LinkedIn
+        </a>
+        <a class="contact-link" href="https://github.com/machinshin/" target="_blank">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+        <a class="contact-link" href="vat.raghavan.resume.pdf" target="_blank">
+          <i class="far fa-file-pdf"></i> Resume PDF
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2026 Vat Raghavan &nbsp;&middot;&nbsp; Remote
+  </footer>
+
+</body>
 </html>
-
-
