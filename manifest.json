@@ -1,5 +1,11 @@
 {
-  "name": "App",
+  "name": "Vat Raghavan — Engineering Team Lead",
+  "short_name": "Vat Raghavan",
+  "description": "Engineering Team Lead with 20+ years building backend systems across fintech, AI & media, healthcare IoT, energy, defense, and gaming. Former CTO.",
+  "start_url": "/",
+  "display": "browser",
+  "theme_color": "#2a9d8f",
+  "background_color": "#ffffff",
   "icons": [
     {
       "src": "\/android-icon-36x36.png",
